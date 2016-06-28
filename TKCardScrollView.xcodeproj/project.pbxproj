@@ -13,6 +13,7 @@
 		27501BAF1D226A7200D38180 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27501BAD1D226A7200D38180 /* Main.storyboard */; };
 		27501BB11D226A7200D38180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27501BB01D226A7200D38180 /* Assets.xcassets */; };
 		27501BB41D226A7200D38180 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27501BB21D226A7200D38180 /* LaunchScreen.storyboard */; };
+		27501BBD1D226A8D00D38180 /* TKCardScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 27501BBC1D226A8D00D38180 /* TKCardScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		27501BB01D226A7200D38180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27501BB31D226A7200D38180 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27501BB51D226A7200D38180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27501BBB1D226A8C00D38180 /* TKCardScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TKCardScrollView.h; sourceTree = "<group>"; };
+		27501BBC1D226A8D00D38180 /* TKCardScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TKCardScrollView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				27501BA81D226A7200D38180 /* AppDelegate.m */,
 				27501BAA1D226A7200D38180 /* ViewController.h */,
 				27501BAB1D226A7200D38180 /* ViewController.m */,
+				27501BBB1D226A8C00D38180 /* TKCardScrollView.h */,
+				27501BBC1D226A8D00D38180 /* TKCardScrollView.m */,
 				27501BAD1D226A7200D38180 /* Main.storyboard */,
 				27501BB01D226A7200D38180 /* Assets.xcassets */,
 				27501BB21D226A7200D38180 /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27501BBD1D226A8D00D38180 /* TKCardScrollView.m in Sources */,
 				27501BAC1D226A7200D38180 /* ViewController.m in Sources */,
 				27501BA91D226A7200D38180 /* AppDelegate.m in Sources */,
 				27501BA61D226A7200D38180 /* main.m in Sources */,
