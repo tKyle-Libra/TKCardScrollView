@@ -49,21 +49,30 @@
 
 -(void) UpdateCard:(UIView *)card WithProgress:(CGFloat)progress Direction:(TKCardMoveDirection)direction
 {
-    if (direction == TKCardMoveDirectionNone) {
-        if (card.tag != [self.cardScrollView CurrentCard]) {
+    if (direction == TKCardMoveDirectionNone)
+    {
+        if (card.tag != [self.cardScrollView CurrentCard])
+        {
             CGFloat scale = 1 - 0.1 * progress;
             card.layer.transform = CATransform3DMakeScale(scale, scale, 1.0);
             card.layer.opacity = 1 - 0.2*progress;
-        } else {
+        }
+        else
+        {
             card.layer.transform = CATransform3DIdentity;
             card.layer.opacity = 1;
         }
-    } else {
+    }
+    else
+    {
         NSInteger transCardTag = direction == TKCardMoveDirectionLeft ? [self.cardScrollView CurrentCard] + 1 : [self.cardScrollView CurrentCard] - 1;
-        if (card.tag != [self.cardScrollView CurrentCard] && card.tag == transCardTag) {
+        if (card.tag != [self.cardScrollView CurrentCard] && card.tag == transCardTag)
+        {
             card.layer.transform = CATransform3DMakeScale(0.9 + 0.1*progress, 0.9 + 0.1*progress, 1.0);
             card.layer.opacity = 0.8 + 0.2*progress;
-        } else if (card.tag == [self.cardScrollView CurrentCard]) {
+        }
+        else if (card.tag == [self.cardScrollView CurrentCard])
+        {
             card.layer.transform = CATransform3DMakeScale(1 - 0.1 * progress, 1 - 0.1 * progress, 1.0);
             card.layer.opacity = 1 - 0.2*progress;
         }
